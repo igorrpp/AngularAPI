@@ -1,6 +1,5 @@
 export const environment = {
   production: false,
-  API : 'https://igorrpp.github.io/AngularAPI/'
+  API : 'http://localhost:3000/'
 };
-
 
