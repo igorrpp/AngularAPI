@@ -1,0 +1,38 @@
+<div class="container">
+    <h1>Alunos <strong>"{{dados.nome}}"</strong></h1>
+    
+        <table class="table">
+            <tr>
+                <th>ID</th>   
+                <td>{{dados.id}}</td> 
+            </tr>
+            <tr>
+                <th>MATRICULA</th>  
+                <td>{{dados.matricula}}</td>  
+            </tr>
+            <tr>
+                <th>NOME</th>  
+                <td>{{dados.nome}}</td>  
+            </tr>
+            <tr>
+                <th>TELEFONE</th>  
+                <td>{{dados.telefone}}</td>  
+            </tr>
+            <tr>
+                <th>E-MAIL</th>   
+                <td>{{dados.email}}</td> 
+            </tr>
+            <tr>
+                <th>DATA DE NASCIMENTO</th>  
+                <td>{{dados.dataNascimento}}</td>  
+            </tr>
+           
+        </table>
+        <div class="row">
+            <div class="col-md-1"><a [routerLink]="['/alunos-update',dados.id]" class="btn btn-warning">Atualizar</a></div>
+            <div class="col-md-1"><button (click)="excluir()" class="btn btn-danger">Excluir</button></div>
+        </div>
+    
+    </div>
+    
+    

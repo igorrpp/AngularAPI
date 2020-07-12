@@ -1,0 +1,27 @@
+<div class="container">
+
+    <table class="table">
+
+        <tr>
+            <th>ID</th>
+            <th>MATRÍCULA</th>
+            <th>NOME</th>
+            <th>E-MAIL</th>
+            <th>TELEFONE</th>
+            <th>DATA DE NASCIMENTO</th>
+            <th></th>
+        </tr>
+        <tr *ngFor="let aluno of lista">
+            <td>{{aluno.id}}</td>
+            <td>{{aluno.matricula}}</td>
+            <td>{{aluno.telefone}}</td>
+            <td>{{aluno.nome}}</td>
+            <td>{{aluno.email}}</td>
+            <td>{{aluno.dataNascimento}}</td>
+            <td><a [routerLink]="['/alunos/',aluno.id]" class="btn btn-success">Visualizar</a></td>
+        </tr>
+        
+
+    </table>
+
+</div>

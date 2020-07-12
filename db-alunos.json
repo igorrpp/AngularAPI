@@ -1,0 +1,36 @@
+{
+  "alunos": [
+    {
+      "id": "101",
+      "matricula": "12345",
+      "nome": "Aline Barbosa",
+      "telefone": "(21) 99999-9999",
+      "email": "aline@email.com",
+      "dataNascimento": "20/03/2001"
+    },
+    {
+      "id": "108",
+      "matricula": "23632",
+      "nome": "Csarolina de Souza",
+      "telefone": "(21) 99999-9999",
+      "email": "carolina@email.com",
+      "dataNascimento": "03/06/2002"
+    },
+    {
+      "matricula": "854523",
+      "nome": "MOMO2",
+      "telefone": "21994584826",
+      "email": "igorpires_rj@hotmail.com",
+      "dataNascimento": "05011996",
+      "id": "TtY3SBw"
+    },
+    {
+      "matricula": "123654",
+      "nome": "Nubia Soares Matias",
+      "telefone": "(21) 99999-9999",
+      "email": "Nubia@gmail.com",
+      "dataNascimento": "03/06/2002",
+      "id": "NvXucpc"
+    }
+  ]
+}

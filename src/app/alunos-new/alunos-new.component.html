@@ -1,0 +1,69 @@
+<div class="container">
+    <h1>Cadastro de Alunos</h1>
+
+    <div class="alert alert-warning" *ngIf="msg != null">{{msg}} </div>
+    
+    <form class="form-horizontal" [formGroup]="formGroup" (ngSubmit)="cadastrar()">
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="matricula"> Matricula</label>
+            <div class="col-md-4">
+                <input class="form-control input-md" id="matricula" name="matricula" required
+                formControlName="matricula">
+                <span class="help-block" *ngIf="formGroup.controls.matricula.errors && formGroup.controls.matricula.dirty"></span>
+            </div>
+        </div>
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="nome"> Nome</label>
+                <div class="col-md-4">
+                    <input class="form-control input-md" id="nome" name="nome" required
+                    formControlName="nome" >
+                    <span class="help-block" *ngIf="formGroup.controls.nome.errors && formGroup.controls.nome.dirty"></span>
+                </div>
+                
+    
+    
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="telefone">Telefone</label>
+                <div class="col-md-4">
+                    <input class="form-control input-md" id="telefone" name="telefone" required
+                    formControlName="telefone" >
+                    <span class="help-block " *ngIf="formGroup.controls.telefone.errors && formGroup.controls.telefone.dirty"></span>
+                </div>
+              
+    
+                
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="email"> E-MAIL</label>
+                <div class="col-md-4">
+                    <input class="form-control input-md" id="email" name="email" required
+                    formControlName="email">
+                    <span class="help-block" *ngIf="formGroup.controls.email.errors && formGroup.controls.email.dirty"></span>
+                </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="dataNascimento"> DATA DE NASCIMENTO</label>
+                    <div class="col-md-4">
+                        <input class="form-control input-md" id="dataNascimento" name="dataNascimento" required
+                        formControlName="dataNascimento">
+                        <span class="help-block" *ngIf="formGroup.controls.dataNascimento.errors && formGroup.controls.dataNascimento.dirty"></span>
+                    </div>
+                
+      
+           
+            
+
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="cadastrar"></label>
+                <div class="col-md-4">
+                    <button id="cadastrar" name="cadastrar" class="btn btn-primary" [disabled]="formGroup.invalid">Cadastrar</button>
+
+                </div>
+            </div>
+            
+        </div>
+    </form>
+</div>
+
